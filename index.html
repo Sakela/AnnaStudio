@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="AnnaApp">
+<html lang="en" ng-app="AnnaStudioApp">
 <head>
 	<title>Anna's Studio</title>
 	<meta charset="utf-8">
@@ -8,10 +8,16 @@
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="app.module.js"></script>
+    <script src="art-list/art-list.module.js"></script>
+    <script src="art-list/art-list.component.js"></script>
 </head>
 
-<body ng-controller="MainController">
-	<div id="header">
+<body>
+
+	<art-list></art-list>
+
+	<!-- <div id="header">
 		<div class="container">
 	        <a href="#" class="logo-icon">
 	          <img src="">
@@ -32,36 +38,11 @@
 	          <li><a href="#" onclick="openContacts()">Contacts</a></li>
 	        </ul>
       	</div>
-	</div>
+	</div> -->
 
-	<div id="content">
-		<div id="main">
-			<h2>Latest Works</h2>
-		</div>
+	
 
-		<div id="gallery" class="hideGallery">
-            <div class="container">
-                <h2>My Works</h2>
-                <div ng-repeat="app in apps" class="col-md-2">
-                    <img ng-src="{{ app.img }}">
-                    <p class="title"> {{ app.title }}</p>
-                    <p class="price"> {{ app.price | currency }}</p>
-                    <p class="pubdate"> {{ app.pubdate | date }}</p>
-                </div>
-            </div>
-        </div>
-
-		<div id="contacts" class="hideContacts">
-			<ul>
-        		<li>Adress:</li>
-		        <li>Phone:</li>
-		        <li>Skype:</li>
-		        <li>e-mail:</li>
-      		</ul>
-		</div>	
-	</div>
-
-	<div id="footer">
+	<!-- <div id="footer">
 		<ul>
 			<li><a href="#"><img src="http://www.decidethefuture.org/images/logos/craigslist.png"></a></li>
 			<li><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/Pinterest/512/Pinterest_Favicon.png"></a></li>
@@ -69,10 +50,10 @@
             <li><a href="#"><img src="http://orig04.deviantart.net/47a2/f/2012/345/f/8/ebay___icon_by_darhymes-d5nq1mg.png"></a></li>
         </ul>
         <h2>Follow Me Here:</h2>
-   	</div>
+   	</div> -->
 
-	<script src="studio.js"></script>
-    <script src="app.js"></script>
-    <script src="MainController.js"></script>
+	<!-- <script src="studio.js"></script> -->
+    
+    <!-- <script src="MainController.js"></script> -->
 </body>
 </html>
