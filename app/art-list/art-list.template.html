@@ -1,0 +1,17 @@
+<div id="content">
+	<div id="main">
+		<h2>Latest Works</h2>
+	</div>
+
+	<div id="gallery" class="hideGallery">
+        <div class="container">
+            <h2>My Works</h2>
+            <div ng-repeat="painting in $ctrl.paintings" class="col-md-2">
+                <img ng-src="{{ painting.img }}">
+                <p class="title"> {{ painting.title }}</p>
+                <p class="price"> {{ painting.price | currency }}</p>
+                <p class="pubdate"> {{ painting.pubdate | date }}</p>
+            </div>
+        </div>
+    </div>
+</div>
