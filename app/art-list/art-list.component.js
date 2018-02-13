@@ -5,8 +5,9 @@ angular.
 	module('artList').
 	component('artList', {
 		templateUrl: 'art-list/art-list.template.html',
-		controller: function ArtListController() {
-			this.paintings = [
+		controller: function ArtListController($http, $sce) {
+			var self = this;
+			self.paintings = [
 				{
 		            img : 'img/11.jpg',
 		            title : 'Stamp Flowers',
@@ -45,6 +46,22 @@ angular.
 		        }
 			];
 
-			this.sortBy = 'price';
+			self.sortBy = 'price';
+
+			var url = "https://backend.deviantart.com/oembed?url=http%3A%2F%2Ffav.me%2Fd2enxz7&format=jsonp"
+			var trustedUrl = $sce.trustAsResourceUrl(url);
+
+			$http.jsonp(trustedUrl, {jsonpCallbackParam: 'callback'})
+			    .then(function successCallback(response){
+			        console.log(response);
+			        self.paintings.push(response.data);
+				}, function errorCallback(response){
+					console.log("erorr");
+				});
+
+			// var oembed_url = 'https://backend.deviantart.com/oembed?url=http%3A%2F%2Ffav.me%2Fd2enxz7&format=jsonp&callback=?';
+			// $.getJSON(oembed_url, function(data) {
+			//     console.log( data);
+			// });
 		}
 	});
