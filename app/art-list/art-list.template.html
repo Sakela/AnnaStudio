@@ -14,9 +14,9 @@
             <div class="col-md-10">
                 <div class="art-list-item" ng-repeat="painting in $ctrl.paintings | filter:$ctrl.query | orderBy:$ctrl.sortBy">
                     <img class="art-list-image" ng-src="{{ painting.img || painting.thumbnail_url }}">
-                    <p> {{ painting.title }}</p>
-                    <p> {{ painting.price || 0.99 | currency }}</p>
-                    <p> {{ painting.pubdate | date }}</p>
+                    <p><a href="#/gallery/{{painting.id}}"> {{ painting.title }} </a></p>
+                    <p> {{ painting.price || 0.99 | currency }} </p>
+                    <p> {{ painting.pubdate | date }} </p>
                 </div>
             </div>            
         </div>

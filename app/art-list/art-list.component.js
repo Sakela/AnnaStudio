@@ -55,6 +55,7 @@ angular.
 			    .then(function successCallback(response){
 			        console.log(response);
 			        self.paintings.push(response.data);
+			        self.setPaintingId();
 				}, function errorCallback(response){
 					console.log("erorr");
 				});
@@ -63,5 +64,11 @@ angular.
 			// $.getJSON(oembed_url, function(data) {
 			//     console.log( data);
 			// });
+
+			self.setPaintingId = function() {
+				self.paintings.forEach(function(painting) {
+					painting.id = self.paintings.indexOf(painting);
+				});
+			}
 		}
 	});
