@@ -4,6 +4,7 @@
 	<title>Anna's Studio</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 
@@ -14,6 +15,8 @@
     <script src="app.config.js"></script>
     <script src="art-list/art-list.module.js"></script>
     <script src="art-list/art-list.component.js"></script>
+    <script src="art-detail/art-detail.module.js"></script>
+    <script src="art-detail/art-detail.component.js"></script>
 </head>
 
 <body>
@@ -33,47 +36,12 @@
 
 	<hr>
 
-	<art-list></art-list>
+	<div ng-view></div>
 
-	<!-- <script async defer src="https://backend.deviantart.com/oembed?url=http%3A%2F%2Ffav.me%2Fd2enxz7&format=jsonp&callback=?"></script> -->
+	<!-- <art-list></art-list> -->
 
-	<!-- <div id="header">
-		<div class="container">
-	        <a href="#" class="logo-icon">
-	          <img src="">
-	        </a>
-	        <ul class="menu">
-	          <li><a href="#" onclick="openHome()">Home</a></li>
-	          
-	          <li class="dropdown">
-	            <a href="#" onclick="dropFunction()" class="dropbtn">My Works</a>
-	            <ul id="myDropdown" class="dropdown-content">
-	              <li><a href="#" onclick="openGallery()">All Paintings</a></li>
-	              <li><a href="#">Style1</a></li>
-	              <li><a href="#">Style2</a></li>
-	              <li><a href="#">Style3</a></li>
-	            </ul>
-	          </li>
-	           
-	          <li><a href="#" onclick="openContacts()">Contacts</a></li>
-	        </ul>
-      	</div>
-	</div> -->
+	<!-- <art-detail></art-detail> -->
 
-	
-
-	<!-- <div id="footer">
-		<ul>
-			<li><a href="#"><img src="http://www.decidethefuture.org/images/logos/craigslist.png"></a></li>
-			<li><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/Pinterest/512/Pinterest_Favicon.png"></a></li>
-            <li><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/yooicons_set01_socialbookmarks/512/social_facebook_box_blue.png"></a></li>
-            <li><a href="#"><img src="http://orig04.deviantart.net/47a2/f/2012/345/f/8/ebay___icon_by_darhymes-d5nq1mg.png"></a></li>
-        </ul>
-        <h2>Follow Me Here:</h2>
-   	</div> -->
-
-	<!-- <script src="studio.js"></script> -->
-    
-    <!-- <script src="MainController.js"></script> -->
 </body>
+
 </html>
