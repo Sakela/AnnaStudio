@@ -4,6 +4,50 @@
 	height: 80px;
 }
 
+/*** NAV ***/
+.navbar {
+	background-color: #031248;
+}
+
+.navbar a {
+	color: #FFF;
+}
+
+.nav-borders {
+	border-left: 1px solid #55ddff;
+}
+
+.nav-borders:hover  {
+	border-top : 1px solid #55ddff;
+	border-bottom : 1px solid #55ddff;
+}
+
+.mx-auto > li:nth-child(4) {
+	border-right: 1px solid #55ddff;
+}
+
+/*** ART-HOME ***/
+.art-home {
+	margin-left: 5px;
+    margin-right: 5px;
+}
+
+.art-home a {
+	color: #031248;
+}
+
+.art-home a:hover {
+	color: #55ddff;
+	text-decoration: none;
+}
+
+.art-home-snip {
+	font-size: 11px;
+    line-height: 2em;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
 /*** ART-LIST ***/
 .art-list-image {
   max-height: 150px;
@@ -16,6 +60,19 @@
 }
 
 /*** GENERAL ***/
+body {
+	color: #031248;
+}
+
+.border-underline {
+	border-bottom: 1px solid #55ddff;
+}
+
 .align-center {
 	text-align: center;
 }
+
+.inline {
+	display: inline;
+}
+

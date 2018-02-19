@@ -16,23 +16,5 @@
 		"title": "Sad Singer",
 		"price": 95,
 		"description": "Lorem ipsum..."
-	},
-	{
-		"img": "img/11.jpg",
-		"title": "Stamp Flowers",
-		"price": 70,
-		"description": "Lorem ipsum..."
-	},
-	{
-		"img": "img/12.jpg",
-		"title": "Simple Flowers",
-		"price": 35,
-		"description": "Lorem ipsum..."
-	},
-	{
-		"img": "img/13.jpg",
-		"title": "Sad Singer",
-		"price": 95,
-		"description": "Lorem ipsum..."
 	}
 ]

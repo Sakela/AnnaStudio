@@ -5,6 +5,7 @@
  */
 angular.module ('AnnaStudioApp', [
 	'ngRoute',
+	'artHome',
 	'artList',
 	'artDetail'
 ]);

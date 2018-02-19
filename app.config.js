@@ -7,12 +7,15 @@ angular.
 			$locationProvider.hashPrefix('!');
 
 			$routeProvider.
+				when('/home', {
+					template: '<art-home></art-home>'
+				}).
 				when('/gallery', {
 					template: '<art-list></art-list>'
 				}).
 				when('/gallery/:paintingId', {
 					template: '<art-detail></art-detail>'
 				}).
-				otherwise('/gallery');
+				otherwise('/home');
 		}
 	]);
