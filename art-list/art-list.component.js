@@ -30,17 +30,17 @@ angular.
 
 			self.sortBy = 'price';
 
-			var url = "https://backend.deviantart.com/oembed?url=http%3A%2F%2Ffav.me%2Fd2enxz7&format=jsonp"
-			var trustedUrl = $sce.trustAsResourceUrl(url);
+			// var url = "https://backend.deviantart.com/oembed?url=http%3A%2F%2Ffav.me%2Fd2enxz7&format=jsonp"
+			// var trustedUrl = $sce.trustAsResourceUrl(url);
 
-			$http.jsonp(trustedUrl, {jsonpCallbackParam: 'callback'})
-			    .then(function successCallback(response){
-			        console.log(response);
-			        self.paintings.push(response.data);
-			        self.setPaintingId();
-				}, function errorCallback(response){
-					console.log("erorr");
-				});
+			// $http.jsonp(trustedUrl, {jsonpCallbackParam: 'callback'})
+			//     .then(function successCallback(response){
+			//         console.log(response);
+			//         self.paintings.push(response.data);
+			//         self.setPaintingId();
+			// 	}, function errorCallback(response){
+			// 		console.log("erorr");
+			// 	});
 
 			// var oembed_url = 'https://backend.deviantart.com/oembed?url=http%3A%2F%2Ffav.me%2Fd2enxz7&format=jsonp&callback=?';
 			// $.getJSON(oembed_url, function(data) {
@@ -52,5 +52,6 @@ angular.
 					painting.id = self.paintings.indexOf(painting);
 				});
 			}
+			self.setPaintingId();
 		}
 	});
