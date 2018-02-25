@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AnnaStudioApp">
+<head>
+	<title>Anna's Studio</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+	<script src="app/bower_components/jquery/dist/jquery.js"></script>
+	<!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="app/bower_components/angular/angular.js"></script>
+    <script src="app/bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="art-list/art-list.module.js"></script>
+    <script src="art-list/art-list.component.js"></script>
+    <script src="art-detail/art-detail.module.js"></script>
+    <script src="art-detail/art-detail.component.js"></script>
+    <script src="art-home/art-home.module.js"></script>
+    <script src="art-home/art-home.component.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md justify-content-center py-1">
+		<img src="img/Oil-Painting.svg" class="header-image image-fluid">
+	    <a href="/" class="navbar-brand">Anna's Studio</a>
+
+	    <div class="navbar-collapse collapse justify-content-between w-100">
+	        <ul class="navbar-nav mx-auto text-center">
+	            <li class="nav-item nav-borders"><a class="nav-link" href="#">Home</a></li>
+	            <li class="nav-item nav-borders"><a class="nav-link" href="#!/gallery">Art</a></li>
+	            <li class="nav-item nav-borders"><a class="nav-link" href="#">Misc</a></li>
+	            <li class="nav-item nav-borders"><a class="nav-link" href="#">Contacts</a></li>
+	        </ul>
+
+	        <ul class="nav navbar-nav flex-row">
+	            <li class="nav-item"><img src="img/Oil-Painting.svg" class="header-image imgae-fluid"></li>
+	        </ul>
+	    </div>
+	</nav>
+
+	<br>		
+
+	<div ng-view></div>
+
+	<!-- <art-list></art-list> -->
+
+	<!-- <art-detail></art-detail> -->
+
+</body>
+
+</html>
