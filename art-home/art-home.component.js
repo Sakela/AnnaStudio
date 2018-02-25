@@ -43,8 +43,6 @@ angular.
 							console.log(newUrl);
 						}				
 					})
-				})
-
-			
+				})			
 		}]
 	})
