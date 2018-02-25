@@ -35,7 +35,10 @@ angular.
 					self.articles = response.data.articles;
 					// console.log(self.articles);
 					self.articles.forEach(function(article) {
-						console.log(article.url);
+						console.log(article);
+						var url = article.urlToImage;
+						var newUrl = url.replace(/http/i,'https');
+						console.log(newUrl);
 					})
 				})
 
