@@ -34,7 +34,9 @@ angular.
 					// console.log(response);
 					self.articles = response.data.articles;
 					// console.log(self.articles);
-
+					self.articles.forEach(article, function() {
+						console.log(article.url);
+					})
 				})
 
 			
