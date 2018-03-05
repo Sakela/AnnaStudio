@@ -1,0 +1,34 @@
+{
+  "name": "anna-studio",
+  "version": "1.0.0",
+  "description": "Anna's gallery with modular-architecture by AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./app -a localhost -p 7999 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sakela/AnnaStudio.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "jQuery",
+    "Bootstrap",
+    "JavaScript",
+    "MVC",
+    "art",
+    "paintings",
+    "gallery"
+  ],
+  "author": "Igor Sakelari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sakela/AnnaStudio/issues"
+  },
+  "homepage": "https://github.com/Sakela/AnnaStudio#readme",
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "http-server": "^0.11.1"
+  }
+}

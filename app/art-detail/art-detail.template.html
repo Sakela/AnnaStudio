@@ -1,0 +1,13 @@
+
+<section class="container">
+	<aside>
+		<h4> {{ $ctrl.painting.title }} </h4>
+		<p> {{ $ctrl.painting.price | currency }} </p>
+		<p> {{ $ctrl.painting.description}} </p>
+	</aside>
+
+	<figure>
+		<img class="rounded img-fluid" ng-src="{{$ctrl.painting.img}}">
+		<figcaption></figcaption>
+	</figure>
+</section>

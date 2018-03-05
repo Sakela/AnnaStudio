@@ -1,0 +1,87 @@
+[
+	{
+		"img": "img/color-storm.jpg",
+		"imgRoom" : "img/color-storm-room.jpg",
+		"title": "Color Storm",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/grafiti.jpg",
+		"imgRoom": "img/grafiti-room.jpg",
+		"title": "Street Style",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/faceless.jpg",
+		"imgRoom": "img/faceless-room.jpg",
+		"title": "Faceless",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/handprint.jpg",
+		"imgRoom": "img/handprint-room.jpg",
+		"title": "Identity",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/sky-wave.jpg",
+		"imgRoom" : "img/sky-wave-room.jpg",
+		"title": "Sky Wave",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/snow-wolf.jpg",
+		"imgRoom" : "img/snow-wolf-room.jpg",
+		"title": "Snow Wolf",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/rainbow-dash.jpg",
+		"imgRoom": "img/rainbow-dash-room.jpg",
+		"title": "Rainbow Dash",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/color-storm.jpg",
+		"imgRoom" : "img/color-storm-room.jpg",
+		"title": "Color Storm",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/grafiti.jpg",
+		"imgRoom": "img/grafiti-room.jpg",
+		"title": "Street Style",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/faceless.jpg",
+		"imgRoom": "img/faceless-room.jpg",
+		"title": "Faceless",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/handprint.jpg",
+		"imgRoom": "img/handprint-room.jpg",
+		"title": "Identity",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/sky-wave.jpg",
+		"imgRoom" : "img/sky-wave-room.jpg",
+		"title": "Sky Wave",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/snow-wolf.jpg",
+		"imgRoom" : "img/snow-wolf-room.jpg",
+		"title": "Snow Wolf",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	},{
+		"img": "img/rainbow-dash.jpg",
+		"imgRoom": "img/rainbow-dash-room.jpg",
+		"title": "Rainbow Dash",
+		"price": 70,
+		"description": "Lorem ipsum..."
+	}
+]
