@@ -87,15 +87,20 @@ body {
 }
 
 .landing-image {
-	background: url(img/desktop2.jpg) no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: 0px;
-    overflow: hidden;
+	background: url(img/desktop3.jpg) no-repeat;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px;
+  overflow: hidden;
 }
 
 .border-underline {
