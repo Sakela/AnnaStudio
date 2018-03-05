@@ -12,7 +12,7 @@
             </div>
 
             <div class="col-md-10">
-                <div class="art-list-item" ng-repeat="painting in $ctrl.paintings | filter:$ctrl.query | orderBy:$ctrl.sortBy">
+                <div class="art-list-item col-md-2" ng-repeat="painting in $ctrl.paintings | filter:$ctrl.query | orderBy:$ctrl.sortBy">
                     <img class="art-list-image img-fluid" ng-src="{{ painting.img || painting.thumbnail_url }}">
                     <p><a href="#!/gallery/{{painting.title}}"> {{ painting.title }} </a></p>
                     <p> {{ painting.price || 0.99 | currency }} </p>

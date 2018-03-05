@@ -16,6 +16,12 @@ angular.
 				when('/gallery/:paintingId', {
 					template: '<art-detail></art-detail>'
 				}).
+				when('/installations', {
+					template: '<art-installations></art-installations>'
+				}).
+				when('/contacts', {
+					template: '<art-contacts></art-contacts>'
+				}).
 				otherwise('/home');
 		}
 	]);
