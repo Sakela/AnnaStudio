@@ -10,7 +10,7 @@ angular.
 			var self = this;
 			self.paintings;
 
-			$http.get('../art.json').then(function(response) {
+			$http.get('art.json').then(function(response) {
 				console.log(response);
 				self.paintings = response.data;
 			})
