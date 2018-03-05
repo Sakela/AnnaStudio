@@ -11,7 +11,7 @@ angular.
 
 			self.sortBy = 'price';
 
-			$http.get('../art.json').then(function(response) {
+			$http.get('art.json').then(function(response) {
 		        self.paintings = response.data;
 			});
 
