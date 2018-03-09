@@ -5,11 +5,16 @@ angular.
 	module('artList').
 	component('artList', {
 		templateUrl: 'art-list/art-list.template.html',
-		controller: function ArtListController($http, $sce) {
+		controller: function ArtListController($http, $sce, $location) {
 			var self = this;
 			self.paintings;
 
 			self.sortBy = 'price';
+
+			self.redirectToPainting = function(myEvent, painting) {
+				console.log(myEvent.currentTarget);
+		        $location.path('/gallery/' + painting.title);
+			};
 
 			$http.get('art.json').then(function(response) {
 		        self.paintings = response.data;

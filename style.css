@@ -1,7 +1,7 @@
 
 /*** HEADER ***/
 .header-image {
-	height: 80px;
+	display: none;
 }
 
 /*** NAV ***/
@@ -16,7 +16,9 @@
 }
 
 .navbar-brand {
-  font-size: 24px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-borders {
@@ -26,6 +28,17 @@
 .nav-borders:hover  {
 	border-top : 1px solid #031248;
 	border-bottom : 1px solid #031248;
+}
+
+.navbar-icons {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
 }
 
 .mx-auto > li:nth-child(4) {
@@ -78,12 +91,65 @@
 
 .art-installations-image {
   border: 1px solid #031248;
+  border-radius: 5px;
+  margin: auto;
+  display: inline-block;
+}
+
+.art-installations-image-close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: white;
+}
+
+.art-installations-image-enlarge {
+  display: block;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index:  1;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(3,18,72,0.85);
+  }
+
+.art-installations-image-enlarge-content {
+  margin: auto;
+  display: block;
+  max-width: 700px;
+  padding-top: 65px;
+}
+
+.art-installations-image-transition {
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+/*** ART-CONTACTS ***/
+.contacts {
+  margin-top: 5%;
+}
+
+.contacts-email {
+  width: 70%;
+}
+
+.contacts-textarea {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*** GENERAL ***/
 body {
 	color: #031248;
   font-family: 'Krona One', sans-serif;
+}
+
+.btn {
+  background-color: #031248;
+  color: white;
 }
 
 .landing-image {
@@ -93,7 +159,6 @@ body {
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size:cover;
-  background-position:center;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -115,3 +180,28 @@ body {
 	display: inline;
 }
 
+.base-class.my-class {
+  color: red;
+  font-size:3em;
+}
+
+.constraints {
+  max-width: 500px;
+}
+
+@media only screen and (min-width: 400px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .navbar-icons {
+    bottom: unset;
+    background-color: unset;
+    position: unset;
+    display: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+}

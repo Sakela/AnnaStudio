@@ -2,8 +2,9 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3" ng-repeat="painting in $ctrl.paintings">
-			<div class="art-installations-block">
-				<img class="art-installations-image img-fluid" ng-src="{{ painting.imgRoom }}">				
+			<div class="art-installations-image-transition" ng-class="enlarge">	
+				<i class="fa fa-window-close art-installations-image-close" ng-hide="!art-installations-image-enlarge" ng-click="enlarge='';content=''"></i>	
+				<img class="img-fluid" ng-class="content" ng-src="{{ painting.imgRoom }}" ng-click="enlarge='art-installations-image-enlarge';content='art-installations-image-enlarge-content'">			
 			</div>
 		</div>
 	</div>
