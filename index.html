@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="//code.angularjs.org/snapshot/angular-animate.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js""></script>
@@ -28,15 +29,19 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md justify-content-center py-1">
+	<nav class="navbar navbar-expand-md">
 		<div class="col-md-4">
 			<img src="img/vectorpaint.svg" class="header-image image-fluid">
 	    	<a href="/" class="navbar-brand">ANNA DAVIS</a>
+
+	    	<i class="fa fa-bars navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</i>
 		</div>
 		
 		<div class="col-md-4">
-			<div class="navbar-collapse collapse justify-content-between w-100">
-		        <ul class="navbar-nav mx-auto text-center">
+			<div  id="navbarNav">
+		        <ul class="navbar-nav nav-link-block text-center">
 		            <li class="nav-item nav-borders"><a class="nav-link" href="#">Home</a></li>
 		            <li class="nav-item nav-borders"><a class="nav-link" href="#!/gallery">Paintings</a></li>
 		            <li class="nav-item nav-borders"><a class="nav-link" href="#!/installations">Installations</a></li>

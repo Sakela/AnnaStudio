@@ -8,6 +8,10 @@ angular.
 			var self = this;
 			console.log('hi installations');
 
+			$('.fa-bars').show();
+
+			$('#navbarNav').addClass("collapse navbar-collapse");
+
 			self.isActive = false;
 
 			self.enlargeImage = function() {

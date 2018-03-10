@@ -11,23 +11,26 @@
     z-index: 9999;
 }
 
-.navbar a {
-	color: #031248;
+.nav-link {
+  background-color: #031248;
+	color: white;
+  margin-bottom: 5px;
 }
 
 .navbar-brand {
+  color: #031248;
   font-size: 30px;
   display: flex;
   justify-content: center;
 }
 
 .nav-borders {
-	border-left: 1px solid #031248;
+  
 }
 
 .nav-borders:hover  {
-	border-top : 1px solid #031248;
-	border-bottom : 1px solid #031248;
+	/*border-top : 1px solid #031248;
+	border-bottom : 1px solid #031248;*/
 }
 
 .navbar-icons {
@@ -41,14 +44,20 @@
   position: fixed;
 }
 
-.mx-auto > li:nth-child(4) {
-	border-right: 1px solid #031248;
+.nav-link-block > li:nth-child(4) {
+	/*border-right: 1px solid #031248;*/
 }
 
 .fa {
   font-size: 28px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.fa-bars {
+  position: fixed;
+  top: 12px;
+  right: 0;
 }
 
 /*** ART-HOME ***/
@@ -189,7 +198,51 @@ body {
   max-width: 500px;
 }
 
-@media only screen and (min-width: 400px) {
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .nav-link {
+    background-color: unset;
+    color: #031248;
+    margin-bottom: unset;
+  }
+
+  .nav-borders {
+    border-left: 1px solid #031248;
+  }
+
+  .nav-borders:hover  {
+    border-top : 1px solid #031248;
+    border-bottom : 1px solid #031248;
+  }
+}
+
+ /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .navbar-icons {
+    bottom: unset;
+    background-color: unset;
+    position: unset;
+    display: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+}
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+/*@media only screen and (min-width: 400px) {
   .navbar-brand {
     font-size: 24px;
   }
@@ -204,4 +257,4 @@ body {
     padding-top: unset;
     padding-bottom: unset;
   }
-}
+}*/

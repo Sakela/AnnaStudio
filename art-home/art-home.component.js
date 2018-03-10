@@ -10,6 +10,8 @@ angular.
 
 			console.log('hi');
 
+			$('.fa-bars').hide();
+
 			// var url = 'https://newsapi.org/v2/top-headlines?' +
 			//           'country=us&' +
 			//           'apiKey=0852f3cd69e04a5ca20cd3e34885dd32';

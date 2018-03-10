@@ -11,6 +11,12 @@ angular.
 
 			self.sortBy = 'price';
 
+			$('.fa-bars').show();
+			$('#navbarNav').addClass("collapse navbar-collapse");
+			// $('.fa-bars').attr('aria-expanded', false);
+			// $('.fa-bars').addClass("collapsed");
+
+
 			self.redirectToPainting = function(myEvent, painting) {
 				console.log(myEvent.currentTarget);
 		        $location.path('/gallery/' + painting.title);
