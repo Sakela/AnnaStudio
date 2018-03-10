@@ -6,6 +6,8 @@ angular.
 		templateUrl: 'art-contacts/art-contacts.template.html',
 		controller: function artContactsController() {
 			console.log('contacts page');
+			$('#navHeader').addClass('nav-brand-section');
+			$('.navbar-toggler').show();
 
 			// send data to action.php on submit
 					self.handleFormSubmit = function (booking) {

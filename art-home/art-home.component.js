@@ -9,8 +9,8 @@ angular.
 			var self = this;
 
 			console.log('hi');
-
-			$('.fa-bars').hide();
+			$('#navHeader').removeClass('nav-brand-section');
+			$('.navbar-toggler').hide();
 
 			// var url = 'https://newsapi.org/v2/top-headlines?' +
 			//           'country=us&' +

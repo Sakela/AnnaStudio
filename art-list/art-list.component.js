@@ -10,8 +10,8 @@ angular.
 			self.paintings;
 
 			self.sortBy = 'price';
-
-			$('.fa-bars').show();
+			$('#navHeader').addClass('nav-brand-section');
+			$('.navbar-toggler').show();
 			$('#navbarNav').addClass("collapse navbar-collapse");
 			// $('.fa-bars').attr('aria-expanded', false);
 			// $('.fa-bars').addClass("collapsed");

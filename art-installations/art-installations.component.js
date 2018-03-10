@@ -7,8 +7,8 @@ angular.
 		controller: function artInstallationsController($http) {
 			var self = this;
 			console.log('hi installations');
-
-			$('.fa-bars').show();
+			$('#navHeader').addClass('nav-brand-section');
+			$('.navbar-toggler').show();
 
 			$('#navbarNav').addClass("collapse navbar-collapse");
 

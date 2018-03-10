@@ -17,11 +17,16 @@
   margin-bottom: 5px;
 }
 
+.nav-brand-section {
+  display: contents;
+}
+
 .navbar-brand {
   color: #031248;
-  font-size: 30px;
+  font-size: 26px;
   display: flex;
   justify-content: center;
+  margin-right: unset;
 }
 
 .nav-borders {
@@ -49,15 +54,15 @@
 }
 
 .fa {
+  display: inline-block;
   font-size: 28px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .fa-bars {
-  position: fixed;
-  top: 12px;
-  right: 0;
+  font-size: 26px;
+  color: #031248;
 }
 
 /*** ART-HOME ***/
@@ -196,6 +201,10 @@ body {
 
 .constraints {
   max-width: 500px;
+}
+
+button:focus {
+  outline: none;
 }
 
  /*Small devices (landscape phones, 576px and up)*/
