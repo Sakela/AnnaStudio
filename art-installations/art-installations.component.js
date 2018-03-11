@@ -9,7 +9,6 @@ angular.
 			console.log('hi installations');
 			$('#navHeader').addClass('nav-brand-section');
 			$('.navbar-toggler').show();
-
 			$('#navbarNav').addClass("collapse navbar-collapse");
 
 			self.isActive = false;

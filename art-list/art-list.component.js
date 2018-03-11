@@ -13,8 +13,6 @@ angular.
 			$('#navHeader').addClass('nav-brand-section');
 			$('.navbar-toggler').show();
 			$('#navbarNav').addClass("collapse navbar-collapse");
-			// $('.fa-bars').attr('aria-expanded', false);
-			// $('.fa-bars').addClass("collapsed");
 
 
 			self.redirectToPainting = function(myEvent, painting) {

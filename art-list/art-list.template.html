@@ -1,7 +1,7 @@
-<div>
+
 	<div class="container-fluid">
         <div class="row">           
-            <div class="col-md-2">
+            <div class="col-md-12">
                 <input placeholder="Search by matching" ng-model="$ctrl.query">
                 <h6>Sort By:</h6>
                 <select ng-model="$ctrl.sortBy">
@@ -11,14 +11,13 @@
                 </select>
             </div>
 
-            <div class="col-md-10">
+            
                 <div class="art-list-item col-md-2" ng-repeat="painting in $ctrl.paintings | filter:$ctrl.query | orderBy:$ctrl.sortBy">
                     <img class="art-list-image img-fluid" ng-click="$ctrl.redirectToPainting($event, painting)" ng-src="{{ painting.img || painting.thumbnail_url }}">
                     <p><a href="#!/gallery/{{painting.title}}"> {{ painting.title }} </a></p>
                     <p> {{ painting.price || 0.99 | currency }} </p>
                     <!-- <p> {{ painting.pubdate | date }} </p> -->
                 </div>
-            </div>            
+                       
         </div>
     </div>
-</div>
