@@ -4,12 +4,17 @@ angular.
 	module('artContacts').
 	component('artContacts', {
 		templateUrl: 'art-contacts/art-contacts.template.html',
-		controller: function artContactsController() {
+		controller: function artContactsController($http) {
 			console.log('contacts page');
-			$('#navHeader').addClass('nav-brand-section');
-			$('.navbar-toggler').show();
+			// $('#navHeader').addClass('nav-brand-section');
 			$('#navbarNav').addClass("collapse navbar-collapse");
 			$('#brand').removeClass('navbar-brand-centered');
+
+			if (window.innerWidth < 768) {
+				$('.navbar-toggler').show();
+			} else {
+				$('.navbar-toggler').hide();
+			}
 
 
 			// send data to action.php on submit

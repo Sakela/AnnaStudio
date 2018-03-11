@@ -10,10 +10,15 @@ angular.
 			self.paintings;
 
 			self.sortBy = 'price';
-			$('#navHeader').addClass('nav-brand-section');
-			$('.navbar-toggler').show();
+			// $('#navHeader').addClass('nav-brand-section');
 			$('#navbarNav').addClass("collapse navbar-collapse");
 			$('#brand').removeClass('navbar-brand-centered');
+
+			if (window.innerWidth < 768) {
+				$('.navbar-toggler').show();
+			} else {
+				$('.navbar-toggler').hide();
+			}
 
 
 			self.redirectToPainting = function(myEvent, painting) {

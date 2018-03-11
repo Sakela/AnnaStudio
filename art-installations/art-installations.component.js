@@ -6,12 +6,18 @@ angular.
 		templateUrl: 'art-installations/art-installations.template.html',
 		controller: function artInstallationsController($http) {
 			var self = this;
-			console.log('hi installations');
+
 			$('#navHeader').addClass('nav-brand-section');
-			$('.navbar-toggler').show();
 			$('#navbarNav').addClass("collapse navbar-collapse");
 			$('#brand').removeClass('navbar-brand-centered');
 
+			// Show/Hide hamburger menu toggler on medium device breakpoint
+			if (window.innerWidth < 768) {
+				$('.navbar-toggler').show();
+			} else {
+				$('.navbar-toggler').hide();
+			}
+			
 
 			self.isActive = false;
 
