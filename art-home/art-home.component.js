@@ -11,6 +11,7 @@ angular.
 			console.log('hi');
 			$('#navHeader').removeClass('nav-brand-section');
 			$('.navbar-toggler').hide();
+			$('#brand').addClass('navbar-brand-centered');
 
 			// var url = 'https://newsapi.org/v2/top-headlines?' +
 			//           'country=us&' +

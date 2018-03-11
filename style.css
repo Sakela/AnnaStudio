@@ -7,8 +7,9 @@
 /*** NAV ***/
 .navbar {
 	background: transparent;
-    position: relative;
-    z-index: 9999;
+  position: relative;
+  z-index: 9999;
+  margin-bottom: 10px;
 }
 
 .nav-link {
@@ -18,21 +19,29 @@
 }
 
 .nav-brand-section {
-  display: contents;
+  margin-bottom: 10px;
 }
 
 .navbar-brand {
   color: #031248;
   font-size: 20px;
+  display: inline;
+}
+
+.navbar-brand-centered {
   display: flex;
   justify-content: center;
-  margin-right: unset;
+  margin-right: 0;
 }
 
 .navbar-icons {
   background-color: white;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.navbar-toggler {
+  padding-right: 0;
 }
 
 .nav-link-block > li:nth-child(4) {
@@ -49,6 +58,7 @@
 .fa-bars {
   font-size: 20px;
   color: #031248;
+  padding-right: 0;
 }
 
 /*** ART-HOME ***/

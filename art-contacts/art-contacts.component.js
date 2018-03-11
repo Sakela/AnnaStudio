@@ -9,6 +9,8 @@ angular.
 			$('#navHeader').addClass('nav-brand-section');
 			$('.navbar-toggler').show();
 			$('#navbarNav').addClass("collapse navbar-collapse");
+			$('#brand').removeClass('navbar-brand-centered');
+
 
 			// send data to action.php on submit
 					self.handleFormSubmit = function (booking) {
