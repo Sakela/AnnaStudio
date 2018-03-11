@@ -6,7 +6,9 @@ angular.
 		templateUrl: 'art-installations/art-installations.template.html',
 		controller: function artInstallationsController($http) {
 			var self = this;
+			self.paintings;
 
+			// Align brand name to the left and collapse nav links into hamburger menu
 			$('#navHeader').addClass('nav-brand-section');
 			$('#navbarNav').addClass("collapse navbar-collapse");
 			$('#brand').removeClass('navbar-brand-centered');
@@ -17,18 +19,9 @@ angular.
 			} else {
 				$('.navbar-toggler').hide();
 			}
-			
 
-			self.isActive = false;
-
-			self.enlargeImage = function() {
-				console.log('bam');
-			}
-
-			self.paintings;
-
+			// Fetch paintings database from local json file
 			$http.get('art.json').then(function(response) {
-				console.log(response);
 				self.paintings = response.data;
 			})
 		}

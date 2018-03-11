@@ -8,7 +8,7 @@ angular.
 		function ArtHomeController($http) {
 			var self = this;
 
-			console.log('hi');
+			// Center nav brand and hide hamburger menu
 			$('#navHeader').removeClass('nav-brand-section');
 			$('.navbar-toggler').hide();
 			$('#brand').addClass('navbar-brand-centered');
